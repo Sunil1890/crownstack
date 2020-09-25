@@ -1,0 +1,197 @@
+button {
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: 16px/1.5 "Dosis", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER–––––––––––––––––– */
+.page-header {
+  background: var(--main-white-color);
+}
+
+.page-header nav {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page-header {
+  width: 94%;
+  position: fixed;
+  background: black;
+  color: white;
+  padding: 0 40px;
+}
+
+select {
+  color: white;
+  background: black;
+  border: none;
+
+}
+
+.nav__menu-item {
+  display: inline-block;
+  position: relative;
+}
+
+.logo {
+  width: 70%
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.nav__submenu li {
+  border-bottom: 1px solid darkgrey;
+  line-height: 2;
+  padding: 3px 20px;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav__submenu1 li {
+  border-bottom: 1px solid darkgrey;
+  line-height: 2;
+  padding: 3px 20px;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav__menu-item .nav__submenu {
+  display: block;
+}
+
+.nav__menu-item1 .nav__submenu1 {
+  display: block;
+}
+
+.nav__submenu {
+  font-weight: 300;
+  text-transform: none;
+  position: absolute;
+  width: 140px;
+  top: 25px;
+  color: black;
+  border: 1px solid gray;
+}
+
+.nav__submenu-item {
+  background: rgba(0, 0, 0, 0.1);
+  background-color: lightgray;
+}
+
+.nav__submenu1 {
+  font-weight: 300;
+  text-transform: none;
+  /* display: none; */
+  position: absolute;
+  width: 500px;
+  top: 60px;
+  right: 90px;
+  color: black;
+  border: 1px solid gray;
+}
+
+.nav__submenu-item {
+  background: rgba(0, 0, 0, 0.1);
+  background-color: lightgray;
+}
+
+.sublocation {
+  width: 150px
+}
+
+.page-main {
+  display: flex;
+  padding: 70px 100px;
+  flex-grow: 1;
+  min-height: 71vh;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #047cc2;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+/* FOOTER –––––––––––––––––––––––––––––– */
+.page-footer {
+  display: flex;
+  height: 65px;
+  background: black;
+}
